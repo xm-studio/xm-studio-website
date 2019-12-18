@@ -1,0 +1,50 @@
+{
+  "name": "xm-studio-website",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://xm-studio.github.io/xm-studio-website/",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "fontfaceobserver": "^2.1.0",
+    "gh-pages": "^2.1.1",
+    "node-sass": "^4.12.0",
+    "react": "^16.10.2",
+    "react-bootstrap": "^1.0.0-beta.14",
+    "react-bootstrap-sidebar": "0.0.1",
+    "react-dom": "^16.10.2",
+    "react-icons": "^3.7.0",
+    "react-ionicons": "^3.1.0",
+    "react-pose": "^4.0.10",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.2.0",
+    "react-vivus": "0.0.2",
+    "styled-components": "^4.4.1",
+    "vivus": "^0.4.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "react-app-rewired": "^2.1.5"
+  }
+}

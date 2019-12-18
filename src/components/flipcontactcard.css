@@ -1,0 +1,116 @@
+@import url("https://use.typekit.net/yrq2ink.css");
+@import '../app.css';
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400&display=swap');
+
+/* Template*/
+
+    /*Positioning*/
+
+    /*Margins and padding*/
+
+    /*Size*/
+
+    /*Borders and colors*/
+
+    /*Inner items*/
+    
+    /*Fonts*/
+
+/* --- */
+
+:root{
+    
+    --MAIN_FONT: 'basic-sans', sans-serif;
+
+}
+
+.flip-card {
+    /*Positioning*/
+
+    /*Margins and padding*/
+    margin-bottom: 2rem;
+    /*Size*/
+    width: 100%;
+    height: 200px;
+    perspective: 1000px;
+
+    /*Borders and colors*/
+    background-color: transparent;
+    border-style: solid;
+    border-color: var(--BORDER_COLOR);
+    border-radius:1rem;
+
+    /*Inner items*/
+    
+    /*Fonts*/
+    
+    
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius:1rem;
+    box-shadow: 5px 5px 12px #25252521;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: var(--VVLIGHT_COLOR);
+    background-image:linear-gradient(125deg, var(--VLIGHT_COLOR), var(--VVLIGHT_COLOR));
+    
+    border-style: solid;
+    border-color: var(--BORDER_COLOR);
+    
+    flex-direction: column reverse;
+    justify-content: space-evenly;
+    text-align: bottom left;
+    vertical-align: bottom;
+  }
+  
+  .flip-card-front-text{
+    color: var(--VDARK_COLOR);
+    border-style: solid;
+    border-color: var(--BORDER_COLOR);
+    text-align: left;
+    bottom: 1rem;
+    left: 1rem;
+    position: absolute;
+    font-weight:500;
+  }
+
+  .flip-card-back-text{
+    color: var(--LIGHT_COLOR);
+    border-style: solid;
+    border-color: var(--BORDER_COLOR);
+    text-align: left;
+    bottom: 1rem;
+    left: 1rem;
+    position: absolute;
+  }
+
+  /* Style the back side */
+  .flip-card-back {
+    background-color: var(--VVLIGHT_COLOR);
+
+    color: white;
+    transform: rotateY(180deg);
+  }

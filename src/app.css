@@ -1,0 +1,465 @@
+@import url("https://use.typekit.net/yrq2ink.css");
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400&display=swap');
+
+/* Template*/
+
+    /*Positioning*/
+
+    /*Margins and padding*/
+
+    /*Size*/
+
+    /*Borders and colors*/
+
+    /*Inner items*/
+    
+    /*Fonts*/
+
+/* --- */
+
+:root{
+    --BORDER_COLOR: rgba(0, 0, 0,1);
+    --MAIN_FONT: 'basic-sans', sans-serif;
+    
+    /*Color theme*/
+    --VVDARK_COLOR: #01403A;
+    --VDARK_COLOR:#4BA68C;
+    --DARK_COLOR: #5BA69E;
+    --LIGHT_COLOR: #78BFB8;
+    --VLIGHT_COLOR: #ADD9D4;
+    --VVLIGHT_COLOR: #E9F1F2;
+    --BLACK_COLOR: #0D0D0D;
+}
+
+html, body {
+    /*Positioning*/
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    
+    
+}
+
+
+img{
+    max-width: 100%;
+}
+
+
+.main-space-inner{
+
+    /*Margins and padding*/
+    margin:1rem;
+
+    /*Border and colors*/
+    
+    border-color: var(--BORDER_COLOR);
+    border-style:solid;
+
+    /*Inner items*/
+    flex-direction: column;
+    
+    
+}
+
+.sidebar-button:hover{
+    border-color: rgba(255,0,0,0);
+}
+
+span.highlight-text-1{
+    
+    font-weight:400;
+    color:var(--DARK_COLOR);
+}
+
+span.highlight-text-2{
+    
+    font-weight:400;
+    color:var(--LIGHT_COLOR);
+}
+
+span.highlight-text-3{
+    
+    font-weight:400;
+}
+
+span.subtle-text{
+    color: var(--VVDARK_COLOR);
+    font-size:0.9em;
+}
+
+a.contact{
+    color: grey;
+}
+
+/*--------------------- MOBILE -------------------*/
+
+@media only screen and (max-width: 768px) {
+
+    :root{
+        font-size: 9px;
+        
+    }
+
+    .base{
+        /*Size*/
+        position:fixed;
+        top:0;
+        bottom:0;
+        left:2rem;
+        right:2rem;
+
+        /*Margins and padding*/
+        padding:1rem;
+    
+        /*Border and colors*/
+        background-color: var(--VVLIGHT_COLOR);
+        
+        
+        /*Inner items*/
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+    }
+
+    .main-space{
+        /*Positioning*/
+    
+        /*Margins and padding*/
+        border-style: solid;
+        border-width: 1px;
+        padding-top: 3rem;
+        
+        
+        /*Size*/
+        width: inherit;
+    
+        /*Borders and colors*/
+        background-color: var(--VVLIGHT_COLOR); 
+        border-color: var(--BORDER_COLOR);
+        border-radius: 0.5rem;
+        /*box-shadow: 0rem 0rem 3rem 0rem rgba(0,0,0,0.2);*/
+    
+        
+        
+        /*Fonts*/
+        
+        /*Inner Items*/
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .main-header{
+        /*Positioning*/
+    
+        /*Margins and padding*/
+        
+    
+        /*Size*/
+    
+        /*Borders and colors*/
+        border-color: var(--BORDER_COLOR);
+        border-style: solid;
+        border-width: 1px;
+        
+    
+        /*Inner items*/
+        
+        /*Fonts*/
+        
+        font-size: 1.2rem;
+        font-family: var(--MAIN_FONT);
+        font-style: normal;
+        text-align: left;
+    }
+
+    .main-title{
+        /*Positioning*/
+    
+        /*Margins and padding*/
+        margin-top:0.5rem;
+    
+        /*Size*/
+    
+        /*Borders and colors*/
+        border-color: var(--BORDER_COLOR);
+        border-style: solid;
+        border-width: 1px;
+        
+    
+        /*Inner items*/
+        
+        /*Fonts*/
+        color: var(--VVDARK_COLOR);
+        font-size: 6rem;
+        font-family: var(--MAIN_FONT);
+        font-style: normal;
+        font-weight: 700;
+        text-align: left;
+    }
+
+    .main-content{
+        /*Positioning*/
+    
+        /*Margins and padding*/
+        
+
+        /*Size*/
+        height: available;
+        
+        /*Borders and colors*/
+        border-style: solid;
+        border-color: var(--BORDER_COLOR);
+    
+        /*Inner items*/
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        
+        /*Fonts*/
+        font-family: var(--MAIN_FONT);;
+        font-size: 20px;
+        font-weight: 300;
+        color: grey;
+        
+    }
+    
+
+    .main-sidebar{
+        /*Positioning*/
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    
+        /*Margins and padding*/
+        margin-top: 0.5rem;
+    
+        /*Size*/
+    
+        /*Border and colors*/
+        border-color: var(--BORDER_COLOR);
+        border-style: solid;
+        border-width: 1px;
+    
+        /*Inner Items*/
+        display: flex;
+        justify-content: space-evenly;
+        
+        
+        /*Fonts*/
+    }
+    
+    .sidebar-button{
+        /*Positioning*/
+    
+        /*Margins and padding*/
+    
+        /*Size*/
+        width: 6rem;
+        
+        /*Borders and colors*/    
+        border-color: var(--BORDER_COLOR);
+        border-style: solid;
+        border-width: 1px;
+    
+        /*Inner items*/
+        
+        /*Fonts*/
+
+        /*Animation*/
+        transition: all .5s;
+    }
+
+    p.content-contact-group{
+        padding-bottom: 2rem;
+
+        /*Borders and colors*/
+        border-style: solid;
+        border-color: var(--BORDER_COLOR);
+    }
+
+    .main-content-text{
+
+        /*Margins and padding*/
+        margin-top:2rem;
+
+        /*Size*/
+        width: 100%;
+
+        /*Borders and colors*/
+        border-style: dashed;
+        border-color: var(--BORDER_COLOR);
+
+        /*Fonts*/
+        font-size: 2rem;
+        text-align: left;
+    }
+
+} 
+
+/*--------------------- PC -------------------*/
+@media only screen and (min-width: 768px) {
+
+    :root{
+        font-size: 6px;
+    }
+    
+    .base{
+        /*Size*/
+        position:fixed;
+        top:0;
+        bottom:0;
+        left:2rem;
+        right:2rem;
+    
+        /*Border and colors*/
+        background-color: var(--VVLIGHT_COLOR);
+        
+        /*Inner items*/
+        flex-direction: row;
+    }
+
+    .main-space{
+        /*Positioning*/
+    
+        /*Margins and padding*/
+        border-style: solid;
+        border-width: 1px;
+        padding-top: 5rem;
+        padding-left: 7rem;
+        margin: 2rem 2rem 2rem 0rem;
+    
+        /*Size*/
+        width: inherit;
+    
+        /*Borders and colors*/
+        background-color:rgb(255, 255, 255); 
+        border-color: var(--BORDER_COLOR);
+        border-radius: 0.5rem;
+        /*box-shadow: 0rem 0rem 2rem 0rem rgba(0,0,0,0.2);*/
+    
+        /*Inner items*/
+        flex-direction: column;
+        
+        /*Fonts*/
+        
+    }
+    
+    .main-header{
+        /*Positioning*/
+    
+        /*Margins and padding*/
+        margin-top: 1rem;
+    
+        /*Size*/
+        width: inherit;
+    
+        /*Borders and colors*/
+        border-color: var(--BORDER_COLOR);
+        border-style: solid;
+        border-width: 1px;
+        
+    
+        /*Inner items*/
+        
+        /*Fonts*/
+        font-size: 4rem;
+        font-family: var(--MAIN_FONT);
+        font-style: normal;
+        font-weight: 400;
+        text-align: left;
+    }
+
+    .main-content{
+        /*Positioning*/
+    
+        /*Margins and padding*/
+        margin-top: 2rem;
+        margin-left:-0.5rem;
+    
+        /*Size*/
+        height: available;
+    
+        /*Borders and colors*/
+        
+        border-color: var(--BORDER_COLOR);
+        border-style: solid;
+    
+        /*Inner items*/
+        
+        /*Fonts*/
+        font-family: var(--MAIN_FONT);;
+        font-size: 20px;
+        font-weight: 300;
+        
+    }
+    
+
+    .main-sidebar{
+        /*Positioning*/
+    
+        /*Margins and padding*/
+        margin: 2rem 2rem 2rem 2rem;
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+    
+        /*Size*/
+        width: 8rem;
+    
+        /*Border and colors*/
+        border-color: var(--BORDER_COLOR);
+        border-style: solid;
+        border-width: 1px;
+    
+        /*Inner Items*/
+        align-items: center;
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        
+        /*Fonts*/
+    }
+    
+    .sidebar-button{
+        /*Positioning*/
+    
+        /*Margins and padding*/
+    
+        /*Size*/
+        width: 9rem;
+        
+        /*Borders and colors*/    
+        border-color: var(--BORDER_COLOR);
+        border-style: solid;
+        border-width: 1px;
+    
+        /*Inner items*/
+        
+        /*Fonts*/
+
+        /*Animation*/
+        transition: all .5s;
+    }
+
+    p.content-contact-group{
+        padding-right: 8rem;
+    }
+
+    .main-content-text{
+
+        /*Margins and padding*/
+        padding: 2rem 2.5rem;
+
+        /*Borders and colors*/
+        /*Borders and colors*/
+        border-style: solid;
+        border-color: var(--BORDER_COLOR);
+        
+        /*Fonts*/
+        font-size:3rem;
+        text-align: left;
+    }
+} 

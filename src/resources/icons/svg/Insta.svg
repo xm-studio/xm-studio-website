@@ -1,0 +1,14 @@
+<svg id="Hand-drawn_Icon_Set" data-name="Hand-drawn Icon Set" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+    <defs>
+        <style>
+            .cls-1{
+                fill:none;
+                stroke:#231f20;
+                stroke-miterlimit:10;
+                stroke-width:5px;
+            }
+        </style>
+    </defs>
+    <title>Website Icons 09-12-2019</title>
+    <path class="cls-1" d="M317.84,152.34H178a38.93,38.93,0,0,0-38.93,38.93V331.11A38.93,38.93,0,0,0,178,370H317.84a38.93,38.93,0,0,0,38.93-38.93V191.27A38.93,38.93,0,0,0,317.84,152.34Zm-69.92,163a54.15,54.15,0,1,1,54.15-54.15A54.15,54.15,0,0,1,247.92,315.34Zm75-117.21a8.9,8.9,0,1,1,8.9-8.89A8.89,8.89,0,0,1,322.87,198.13Z"/>
+</svg>
