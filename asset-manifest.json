@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/xm-studio-website/static/css/main.2123108b.chunk.css",
-    "main.js": "/xm-studio-website/static/js/main.6d379c18.chunk.js",
-    "main.js.map": "/xm-studio-website/static/js/main.6d379c18.chunk.js.map",
+    "main.js": "/xm-studio-website/static/js/main.91e90e41.chunk.js",
+    "main.js.map": "/xm-studio-website/static/js/main.91e90e41.chunk.js.map",
     "runtime-main.js": "/xm-studio-website/static/js/runtime-main.ea593941.js",
     "runtime-main.js.map": "/xm-studio-website/static/js/runtime-main.ea593941.js.map",
     "static/js/2.57d84820.chunk.js": "/xm-studio-website/static/js/2.57d84820.chunk.js",
     "static/js/2.57d84820.chunk.js.map": "/xm-studio-website/static/js/2.57d84820.chunk.js.map",
     "index.html": "/xm-studio-website/index.html",
-    "precache-manifest.7b7e0cd9a4963a6fcb9a2bdb8f62dc5a.js": "/xm-studio-website/precache-manifest.7b7e0cd9a4963a6fcb9a2bdb8f62dc5a.js",
+    "precache-manifest.ba867ce9da120c6d4f2428b6749e6afd.js": "/xm-studio-website/precache-manifest.ba867ce9da120c6d4f2428b6749e6afd.js",
     "service-worker.js": "/xm-studio-website/service-worker.js",
     "static/css/main.2123108b.chunk.css.map": "/xm-studio-website/static/css/main.2123108b.chunk.css.map"
   },
@@ -16,6 +16,6 @@
     "static/js/runtime-main.ea593941.js",
     "static/js/2.57d84820.chunk.js",
     "static/css/main.2123108b.chunk.css",
-    "static/js/main.6d379c18.chunk.js"
+    "static/js/main.91e90e41.chunk.js"
   ]
 }
