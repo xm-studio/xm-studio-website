@@ -19,7 +19,7 @@
 /* --- */
 
 :root{
-    --BORDER_COLOR: rgba(0, 0, 0,1);
+    --BORDER_COLOR: rgba(0, 0, 0,0);
     --MAIN_FONT: 'basic-sans', sans-serif;
     
     /*Color theme*/
@@ -215,8 +215,8 @@ a.contact{
         border-color: var(--BORDER_COLOR);
     
         /*Inner items*/
-        display: flex;
-        flex-flow: row wrap;
+        
+        flex-direction: column;
         justify-content: center;
         
         /*Fonts*/
@@ -284,10 +284,11 @@ a.contact{
     .main-content-text{
 
         /*Margins and padding*/
-        margin-top:2rem;
+        margin-top: 0rem;
+        
 
         /*Size*/
-        width: 100%;
+        
 
         /*Borders and colors*/
         border-style: dashed;
@@ -378,7 +379,7 @@ a.contact{
     
         /*Margins and padding*/
         margin-top: 2rem;
-        margin-left:-0.5rem;
+        
     
         /*Size*/
         height: available;

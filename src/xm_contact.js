@@ -16,15 +16,19 @@ class XMContact extends React.Component {
               <Row className='main-title'>Contact
               </Row>
               <Row className='main-content'>
-                <Row className = 'main-content-text'>
+                <Col className = 'main-content-text'>
+                <Row>
                 We are a studio that's founded on the clouds, as of now.
                  Do drop us a mail or a good phone call to schedule a meeting!
-                              
                 </Row>
-                <Row className = 'main-content-text'>
+                </Col>
+                <Col className = 'main-content-text'>
                   <FlipContactCard name="Elangovan Sankaralingom" designation="CEO" tel="+919842144844" mail="elan@xm.studio"/>
-                  <FlipContactCard name="Bhavatarini Kumaravel" designation="CFO" tel="+919585525188" mail="bava@xm.studio"/>
-                </Row>
+                </Col>
+                <Col>
+                <FlipContactCard name="Bhavatarini Kumaravel" designation="CFO" tel="+919585525188" mail="bava@xm.studio"/>
+
+                </Col>
               </Row>
           </Col>  
     );

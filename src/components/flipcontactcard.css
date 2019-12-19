@@ -28,9 +28,9 @@
     /*Positioning*/
 
     /*Margins and padding*/
-    margin-bottom: 2rem;
+    margin-top: 2rem;
     /*Size*/
-    width: 100%;
+    
     height: 200px;
     perspective: 1000px;
 
@@ -58,8 +58,16 @@
   }
   
   /* Do an horizontal flip when you move the mouse over the flip box container */
-  .flip-card:hover .flip-card-inner {
+  .flip-card:hover .flip-card-inner  {
     transform: rotateY(180deg);
+  }
+
+  .flip-card:active .flip-card-inner  {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-back:active {
+    transform: rotateY(-180deg);
   }
   
   /* Position the front and back side */
