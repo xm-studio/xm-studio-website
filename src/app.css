@@ -52,8 +52,9 @@ img{
 .main-space-inner{
 
     /*Margins and padding*/
-    margin:1rem;
-
+    
+    
+    
     /*Border and colors*/
     
     border-color: var(--BORDER_COLOR);
@@ -106,7 +107,7 @@ a.contact{
 
     .base{
         /*Size*/
-        position:fixed;
+        position: absolute;
         top:0;
         bottom:0;
         left:2rem;
@@ -126,7 +127,7 @@ a.contact{
 
     .main-space{
         /*Positioning*/
-    
+        overflow-y: hidden;
         /*Margins and padding*/
         border-style: solid;
         border-width: 1px;
@@ -150,11 +151,12 @@ a.contact{
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
+        
     }
 
     .main-header{
         /*Positioning*/
-    
+        
         /*Margins and padding*/
         
     
@@ -170,7 +172,7 @@ a.contact{
         
         /*Fonts*/
         
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         font-family: var(--MAIN_FONT);
         font-style: normal;
         text-align: left;
@@ -203,25 +205,27 @@ a.contact{
 
     .main-content{
         /*Positioning*/
-    
+        
+
         /*Margins and padding*/
         
 
         /*Size*/
-        height: available;
+        
         
         /*Borders and colors*/
         border-style: solid;
         border-color: var(--BORDER_COLOR);
     
         /*Inner items*/
+        display: flex;
         
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-evenly;
         
         /*Fonts*/
         font-family: var(--MAIN_FONT);;
-        font-size: 20px;
+        
         font-weight: 300;
         color: grey;
         

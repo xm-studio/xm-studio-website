@@ -7,7 +7,7 @@ class FlipContactCard extends React.Component {
     render (){
         
         return(
-            <Row className="flip-card">
+            <div className="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front" flex>
                         
@@ -20,7 +20,7 @@ class FlipContactCard extends React.Component {
                     <span className="highlight-text-3">Mail</span>&nbsp;&nbsp;&nbsp;<a className="contact" href={"mailto:"+this.props.mail} target="_top">{this.props.mail}</a></p></Col>
                     </div>
                 </div>
-            </Row>    
+            </div>    
         );
     }
 }

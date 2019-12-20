@@ -10,27 +10,28 @@ class XMContact extends React.Component {
   render (){
     
     return(
+      <Container>
       <Col className = "main-space-inner">
-              <Row className='main-header'>XM STUDIO<br/>RESEARCH + ARCHITECTURE
-              </Row>
-              <Row className='main-title'>Contact
-              </Row>
-              <Row className='main-content'>
-                <Col className = 'main-content-text'>
-                <Row>
-                We are a studio that's founded on the clouds, as of now.
-                 Do drop us a mail or a good phone call to schedule a meeting!
-                </Row>
-                </Col>
-                <Col className = 'main-content-text'>
-                  <FlipContactCard name="Elangovan Sankaralingom" designation="CEO" tel="+919842144844" mail="elan@xm.studio"/>
-                </Col>
-                <Col>
-                <FlipContactCard name="Bhavatarini Kumaravel" designation="CFO" tel="+919585525188" mail="bava@xm.studio"/>
-
-                </Col>
-              </Row>
-          </Col>  
+        <Row className='main-header'>XM STUDIO<br/>RESEARCH + ARCHITECTURE
+        </Row>
+        <Row className='main-title'>Contact
+        </Row>
+      </Col>
+      <Col className='main-content'>
+        <Row className = 'main-content-text'>
+          
+            We are a studio that's founded on the clouds, as of now.
+            Do drop us a mail or a good phone call to schedule a meeting!
+          
+        </Row>
+        <Row className = 'main-content-text'>
+          <FlipContactCard name="Elangovan Sankaralingom" designation="CEO" tel="+919842144844" mail="elan@xm.studio"/>
+        </Row>
+        <Row className = 'main-content-text'>
+          <FlipContactCard name="Bhavatarini Kumaravel" designation="CFO" tel="+919585525188" mail="bava@xm.studio"/>
+        </Row>
+      </Col>
+      </Container> 
     );
   
 }

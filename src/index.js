@@ -14,22 +14,19 @@ import XMContact from './xm_contact.js';
 
 const routing = (
     <Router forceRefresh={true}>
-        <Container fluid>
+        <Container >
           <Row className='base'>
             <Sidebar/>
-              <Col className="main-space">
-        <Route exact path="/" component={XMFeed} />
-        <Route path="/feed" component={XMFeed} />
-        <Route path="/projects" component={XMProjects} />
-        <Route path="/bookstack" component={XMBookStack} />
-        <Route path="/team" component={XMTeam} />
-        <Route path="/contact" component={XMContact} />
-      </Col>
-      
+            <Col className="main-space">
+              <Route exact path="/" component={XMFeed} />
+              <Route path="/feed" component={XMFeed} />
+              <Route path="/projects" component={XMProjects} />
+              <Route path="/bookstack" component={XMBookStack} />
+              <Route path="/team" component={XMTeam} />
+              <Route path="/contact" component={XMContact} />
+            </Col>
           </Row>
         </Container>
-      <Sidebar/>
-      
     </Router>
 )
 

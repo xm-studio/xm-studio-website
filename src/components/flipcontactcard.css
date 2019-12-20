@@ -30,8 +30,8 @@
     /*Margins and padding*/
     margin-top: 2rem;
     /*Size*/
-    
-    height: 200px;
+    width: stretch;
+    height: 20rem;
     perspective: 1000px;
 
     /*Borders and colors*/
@@ -58,17 +58,11 @@
   }
   
   /* Do an horizontal flip when you move the mouse over the flip box container */
-  .flip-card:hover .flip-card-inner  {
+  .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
   }
 
-  .flip-card:active .flip-card-inner  {
-    transform: rotateY(180deg);
-  }
 
-  .flip-card-back:active {
-    transform: rotateY(-180deg);
-  }
   
   /* Position the front and back side */
   .flip-card-front, .flip-card-back {
@@ -117,7 +111,7 @@
 
   /* Style the back side */
   .flip-card-back {
-    background-color: var(--VVLIGHT_COLOR);
+    background-color: white;
 
     color: white;
     transform: rotateY(180deg);
