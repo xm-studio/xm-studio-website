@@ -8,11 +8,17 @@ class XMBookStack extends React.Component {
   render (){
     
     return(
+      <Container>
       <Col className = "main-space-inner">
-              <Col className='main-header'>XM Studio | Book Stack
-              </Col>
-              <Col className='main-content'></Col>
-          </Col>  
+        <Row className='main-header'>XM STUDIO<br/>RESEARCH + ARCHITECTURE
+        </Row>
+        <Row className='main-title'>Contact
+        </Row>
+      </Col>
+      <Col className='main-content'>
+
+      </Col>
+      </Container> 
     );
   
 } 

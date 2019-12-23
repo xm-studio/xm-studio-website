@@ -9,11 +9,17 @@ class XMFeed extends React.Component {
   render (){
     
       return(
-        <Col className = "main-space-inner">
-                <Col className='main-header'>XM Studio | Feed
-                </Col>
-                <Col className='main-content'></Col>
-            </Col>  
+      <Container>
+      <Col className = "main-space-inner">
+        <Row className='main-header'>XM STUDIO<br/>RESEARCH + ARCHITECTURE
+        </Row>
+        <Row className='main-title'>Feed
+        </Row>
+      </Col>
+      <Col className='main-content'>
+
+      </Col>
+      </Container> 
       );
     
   }
