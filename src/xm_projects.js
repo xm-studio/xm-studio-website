@@ -8,16 +8,19 @@ class XMProjects extends React.Component {
   render (){
     
     return(
-      <Container>
-      <Col className = "main-space-inner">
-        <Row className='main-header'>XM STUDIO<br/>RESEARCH + ARCHITECTURE
-        </Row>
-        <Row className='main-title'>Projects
-        </Row>
-      </Col>
-      <Col className='main-content'>
-
-      </Col>
+      <Container >
+        
+        <Col className = "main-space-header">
+          <Row className='main-header'>XM STUDIO<br/>RESEARCH + ARCHITECTURE
+          </Row>
+          <Row className='main-title'>Projects
+          </Row>
+        </Col>
+      
+        <Col className='main-content'>
+      
+        </Col>
+      
       </Container>
     );
   

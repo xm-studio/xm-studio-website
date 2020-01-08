@@ -11,8 +11,8 @@ import TeamButton from '../resources/icons/svgr/TeamButton/index.jsx';
 import Icon from '../resources/icons/js/FbButton.js';
 
 class Sidebar extends React.Component{
-  constructor(){
-    super();
+  constructor(props){
+    super(props);
     this.state={
         isActive:false
     }

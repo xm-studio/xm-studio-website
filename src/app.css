@@ -49,10 +49,12 @@ img{
 }
 
 
-.main-space-inner{
+.main-space-header{
 
-    /*Margins and padding*/
+/*Positioning*/
+    position: absolute;
     
+    /*Margins and padding*/
     
     
     /*Border and colors*/
@@ -112,24 +114,27 @@ a.contact{
         bottom:0;
         left:2rem;
         right:2rem;
-
+        overflow: hidden;
+        z-index: -10;
         /*Margins and padding*/
         padding:1rem;
-    
+        padding-top: 3rem;
         /*Border and colors*/
         background-color: var(--VVLIGHT_COLOR);
         
         
         /*Inner items*/
-        flex-direction: column-reverse;
-        justify-content: space-evenly;
+        flex-direction: column;
     }
 
     .main-space{
         /*Positioning*/
-        overflow-y: hidden;
+        position: absolute;
+        top: 0rem;
+        overflow: auto;
+
         /*Margins and padding*/
-        border-style: solid;
+        border-style: dotted;
         border-width: 1px;
         padding-top: 3rem;
         
@@ -148,9 +153,6 @@ a.contact{
         /*Fonts*/
         
         /*Inner Items*/
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
         
     }
 
@@ -205,14 +207,17 @@ a.contact{
 
     .main-content{
         /*Positioning*/
+        overflow-y: auto;
+        overflow-x: hidden;
+        top:1.5rem;
+        bottom: 4rem;
         
-
         /*Margins and padding*/
-        
+        margin-right: 5rem;
 
         /*Size*/
-        
-        
+        height: 72vh;
+
         /*Borders and colors*/
         border-style: solid;
         border-color: var(--BORDER_COLOR);
@@ -221,7 +226,7 @@ a.contact{
         display: flex;
         
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: top;
         
         /*Fonts*/
         font-family: var(--MAIN_FONT);;
@@ -234,6 +239,7 @@ a.contact{
 
     .main-sidebar{
         /*Positioning*/
+        position: fixed;
         left: 0;
         bottom: 0;
         width: 100%;
@@ -258,7 +264,7 @@ a.contact{
     
     .sidebar-button{
         /*Positioning*/
-    
+        z-index: 10;
         /*Margins and padding*/
     
         /*Size*/
