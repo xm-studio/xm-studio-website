@@ -1,9 +1,10 @@
 import React from 'react';
-import {Row, Col, Container, Card, ListGroup, Button, Image} from 'react-bootstrap';
+import {Row, Col, Container} from 'react-bootstrap';
 import './app.css';
 import './custom.scss';
+import { Link } from 'react-router-dom';
 
-import Anim from './resources/SiteUnderConstruction.gif';
+import BookShelf from './components/bookshelf.js';
 
 class XMBookStack extends React.Component {
 
@@ -22,7 +23,11 @@ class XMBookStack extends React.Component {
         </Col>
       
         <Col className='main-content'>
-      
+        <Link to="/bookstack/prototyping_workshop"><BookShelf shelfName="Academic research"/></Link>
+          
+          <BookShelf shelfName="Academic design"/>
+          <BookShelf shelfName="Academic essays"/>
+          <BookShelf shelfName="Miscellaneous"/>
         </Col>
       
       </Container>

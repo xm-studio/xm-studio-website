@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container, Row, Col} from 'react-bootstrap';
+import {Col} from 'react-bootstrap';
 import '../../src/app.css';
 
 class MainSpace extends React.Component {

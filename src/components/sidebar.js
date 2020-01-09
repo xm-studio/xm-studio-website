@@ -8,7 +8,6 @@ import PawprintButton from '../resources/icons/svgr/PawprintButton/index.jsx';
 import BookstackButton from '../resources/icons/svgr/BookstackButton/index.jsx';
 import ContactButton from '../resources/icons/svgr/ContactButton/index.jsx';
 import TeamButton from '../resources/icons/svgr/TeamButton/index.jsx';
-import Icon from '../resources/icons/js/FbButton.js';
 
 class Sidebar extends React.Component{
   constructor(props){
