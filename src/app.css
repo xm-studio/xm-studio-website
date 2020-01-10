@@ -19,7 +19,7 @@
 /* --- */
 
 :root{
-    --BORDER_COLOR: rgba(0, 0, 0,0);
+    --BORDER_COLOR: rgba(0, 0, 0,1);
     --MAIN_FONT: 'basic-sans', sans-serif;
     
     /*Color theme*/

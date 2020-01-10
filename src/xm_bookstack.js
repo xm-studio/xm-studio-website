@@ -23,7 +23,7 @@ class XMBookStack extends React.Component {
         </Col>
       
         <Col className='main-content'>
-        <Link to="/bookstack/prototyping_workshop"><BookShelf shelfName="Academic research"/></Link>
+        <Link to="/bookstack/research/arm_final"><BookShelf shelfName="Academic research"/></Link>
           
           <BookShelf shelfName="Academic design"/>
           <BookShelf shelfName="Academic essays"/>

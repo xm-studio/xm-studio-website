@@ -12,7 +12,7 @@ import XMBookStack from './xm_bookstack.js';
 import XMTeam from './xm_team.js';
 import XMContact from './xm_contact.js';
 
-import PrototypingWorkshopBook from './resources/Books/Research/R1_PrototypingWorkshop.js';
+import ARMFinal from './resources/Books/Research/ARMFinal.js';
 
 export default class Routing extends React.Component{
 
@@ -28,7 +28,7 @@ export default class Routing extends React.Component{
             <Route exact path="/bookstack" component={XMBookStack}/>
             <Route exact path="/team" component={XMTeam}/>
             <Route exact path="/contact" component={XMContact}/>
-            <Route exact path="/bookstack/prototyping_workshop" component={PrototypingWorkshopBook}/>
+            <Route exact path="/bookstack/research/arm_final" component={ARMFinal}/>
         </Row>
       </Container>
     </Router>);

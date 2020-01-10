@@ -18,6 +18,7 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0",
     "react-vivus": "0.0.2",
+    "require-all": "^3.0.0",
     "styled-components": "^4.4.1",
     "turn.js": "^1.0.5",
     "vivus": "^0.4.5"
