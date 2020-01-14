@@ -10,8 +10,8 @@ import "../../../components/turn.css";
 import testpage from './ARM Final/Book_Page_0.jpg';
 
 const options = {
-    width: 500,
-    height: 400,
+    width: 400,
+    height: 300,
     autoCenter: true,
     display: "double",
     acceleration: true,
@@ -37,15 +37,13 @@ const options = {
   
   class ARMFinal extends React.Component{
 
-    renderPages(length){
+    renderPages(path, length){
       let pages =[];
-      var allpages = require("./ARM Final/");
       for(let i=0;i<parseInt(length);i++){
-        
-        pages.push(<Col className="main-content-text">
-        <img src={allpages[i]} height = "20" alt="" />
-        hello
-      </Col>);
+        let filename = path.concat('Book_Page_',(i+1).toString(),'.jpg');
+        pages.push(<div key={i} className="page">
+        <img src={filename} alt="" />
+      </div>);
       }
       return pages;
     }
@@ -64,15 +62,9 @@ const options = {
           <Col >
             <Flipbook options={options} className="magazine">
             
-              {pages.map((page, index) => (
-                <div key={index} className="page">
-                  <img src={require('./ARM Final/Book_Page_0.jpg')} alt="" />
-                </div>
-              ))}
+            {this.renderPages("https://github.com/xm-studio/xm-studio-website/raw/website-creation/src/resources/Books/Research/ARM%20Final/",6)}
+
             </Flipbook>
-          </Col>
-          <Col className="main-content-text">
-          {this.renderPages(6)}
           </Col>
         </Container>
         );
