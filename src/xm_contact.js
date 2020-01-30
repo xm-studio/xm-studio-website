@@ -10,8 +10,7 @@ class XMContact extends React.Component {
   render (){
     
     return(
-            <Container >
-        
+      <Container >
         <Col className = "main-space-header">
           <Row className='main-header'>XM STUDIO<br/>RESEARCH + ARCHITECTURE
           </Row>
@@ -32,9 +31,7 @@ class XMContact extends React.Component {
       <Row className = 'main-content-text'>
         <FlipContactCard name="Bhavatarini Kumaravel" designation="CFO" tel="+919585525188" mail="bava@xm.studio"/>
       </Row>
-      <Row className = 'main-content-text'>
-        <FlipContactCard name="Bhavatarini Kumaravel" designation="CFO" tel="+919585525188" mail="bava@xm.studio"/>
-      </Row>
+
         </Col>
       
       </Container>

@@ -116,6 +116,7 @@ a.contact{
         right:2rem;
         overflow: hidden;
         z-index: -10;
+        
         /*Margins and padding*/
         padding:1rem;
         padding-top: 3rem;
@@ -178,6 +179,7 @@ a.contact{
         font-family: var(--MAIN_FONT);
         font-style: normal;
         text-align: left;
+        text-transform: uppercase;
     }
 
     .main-title{
@@ -205,18 +207,43 @@ a.contact{
         text-align: left;
     }
 
+    
+    .main-book-title{
+        /*Positioning*/
+    
+        /*Margins and padding*/
+        margin-top: 0.5rem;
+        /*Size*/
+    
+        /*Borders and colors*/
+        border-color: var(--BORDER_COLOR);
+        border-style: solid;
+        border-width: 1px;
+        
+    
+        /*Inner items*/
+        
+        /*Fonts*/
+        font-size: 2rem;
+        font-family: var(--MAIN_FONT);
+        font-style: normal;
+        text-align: left;
+        text-transform: uppercase;
+    }
+
     .main-content{
         /*Positioning*/
         overflow-y: auto;
         overflow-x: hidden;
         top:1.5rem;
-        bottom: 4rem;
+        z-index: 10;
+        
         
         /*Margins and padding*/
         margin-right: 5rem;
 
         /*Size*/
-        height: 72vh;
+        height: 80vh;
 
         /*Borders and colors*/
         border-style: solid;
@@ -235,7 +262,43 @@ a.contact{
         color: grey;
         
     }
+
     
+    
+    .main-content-book{
+        /*Positioning*/
+        
+        min-zoom: 0.5;
+        max-zoom: 5;
+        z-index: 10;
+        
+        /*Margins and padding*/
+        margin-top: 2rem;
+        margin-left: -1.8rem;
+        margin-right: -1.5rem;
+
+        /*Size*/
+        height: 70vh;
+        width: 110%;
+
+        /*Borders and colors*/
+        border-style: solid;
+        border-color: var(--BORDER_COLOR);
+    
+        /*Inner items*/
+        display:table-cell;
+        vertical-align:middle;
+        align-items: center;
+        align-self: center;
+        flex-direction: column;
+        
+        /*Fonts*/
+        font-family: var(--MAIN_FONT);;
+        
+        font-weight: 300;
+        color: grey;
+        
+    }
 
     .main-sidebar{
         /*Positioning*/
@@ -243,16 +306,18 @@ a.contact{
         left: 0;
         bottom: 0;
         width: 100%;
+        z-index: 20;
     
         /*Margins and padding*/
-        margin-top: 0.5rem;
-    
+        padding-bottom: 1rem;
+
         /*Size*/
     
         /*Border and colors*/
         border-color: var(--BORDER_COLOR);
         border-style: solid;
         border-width: 1px;
+        background-color: var(--VVLIGHT_COLOR);
     
         /*Inner Items*/
         display: flex;
@@ -264,8 +329,10 @@ a.contact{
     
     .sidebar-button{
         /*Positioning*/
-        z-index: 10;
+        z-index: 20;
+
         /*Margins and padding*/
+        padding-top: 0.5rem;
     
         /*Size*/
         width: 6rem;
@@ -309,52 +376,7 @@ a.contact{
         text-align: left;
     }
 
-    .book-shelf{
-        
-        /*Positioning*/
-
-        /*Margins and padding*/
-
-        /*Size*/
-        width: stretch;
-        height: 25vh;
-
-
-        /*Borders and colors*/
-        border-color: var(--BORDER_COLOR);
-        border-style: solid;
-        border-width: 1px;
-        border-radius: 1rem;
-        box-shadow: inset 0px 0px 15px #25252521;
-
-        /*Inner items*/
-        display: flex;
-        flex-direction: row;
     
-        /*Fonts*/
-    }
-
-    .book-shelf-name{
-
-        /*Margins and padding*/
-        margin-top: 1rem;
-        margin-bottom: 2rem;
-
-        /*Size*/
-        height:4rem;
-
-        /*Borders and colors*/
-        border-color: var(--BORDER_COLOR);
-        border-style: solid;
-        border-width: 1px;
-
-        /*Fonts*/
-        font-size: 2rem;
-        text-transform: uppercase;
-        color: var(--DARK_COLOR);
-        
-        /*Inner items*/
-    }
 } 
 
 /*--------------------- PC -------------------*/

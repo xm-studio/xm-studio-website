@@ -7,7 +7,7 @@
   -ms-user-select: none;
   user-select: none;
   transition: margin-left 0.5s;
-  touch-action: pinch-zoom;
+  touch-action: auto pinch-zoom;
 }
 
 .magazine .page {

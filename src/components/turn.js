@@ -1,3 +1,5 @@
+import Hash from './hash.js';
+
 var $ = require('jquery');
 
 var has3d,
@@ -80,7 +82,45 @@ var has3d,
 
     // Events
 
-    when: null
+    when: {
+
+			turning: function(event, page, view) {
+				
+				var book = $(this),
+				currentPage = book.turn('page'),
+				pages = book.turn('pages');
+		
+				// Update the current URI
+
+				Hash.go('page/' + page).update();
+
+
+				
+
+				$('.thumbnails .page-'+currentPage).
+					parent().
+					removeClass('current');
+
+				$('.thumbnails .page-'+page).
+					parent().
+					addClass('current');
+
+			},
+
+			turned: function(event, page, view) {
+
+				
+
+				$(this).turn('center');
+
+				if (page==1) { 
+					$(this).turn('peel', 'br');
+				}
+
+			},
+
+			
+		}
   },
 
   flipOptions = {

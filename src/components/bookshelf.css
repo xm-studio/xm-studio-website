@@ -1,0 +1,106 @@
+@import url("https://use.typekit.net/yrq2ink.css");
+@import '../app.css';
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400&display=swap');
+
+/* Template*/
+
+    /*Positioning*/
+
+    /*Margins and padding*/
+
+    /*Size*/
+
+    /*Borders and colors*/
+
+    /*Inner items*/
+    
+    /*Fonts*/
+
+/* --- */
+
+:root{
+    
+    --MAIN_FONT: 'basic-sans', sans-serif;
+
+}
+
+
+.book-shelf{
+        
+    /*Positioning*/
+
+    /*Margins and padding*/
+
+    /*Size*/
+    width: stretch;
+    height: 20vh;
+
+
+    /*Borders and colors*/
+    border-color: var(--BORDER_COLOR);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 1rem;
+
+    /*Inner items*/
+    display: flex;
+
+    /*Fonts*/
+}
+
+.book-shelf-name{
+
+    /*Margins and padding*/
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+
+    /*Size*/
+    height:4rem;
+
+    /*Borders and colors*/
+    border-color: var(--BORDER_COLOR);
+    border-style: solid;
+    border-width: 1px;
+
+    /*Fonts*/
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--VVDARK_COLOR);
+    
+    /*Inner items*/
+}
+
+.book-space{
+    /*Positioning*/
+
+    /*Margins and padding*/
+
+    /*Size*/
+    width: stretch;
+
+    /*Borders and colors*/
+
+    /*Inner items*/
+
+    /*Fonts*/
+}
+
+.book-shelf-base{
+        /*Positioning*/
+
+    /*Margins and padding*/
+
+    /*Size*/
+    width: stretch;
+    height: 2rem;
+
+
+    /*Borders and colors*/
+    background-color: black;
+    background-image: url('../resources/Textures/WoodTexture.jpg');
+    box-shadow: 5px 5px 12px #25252521;
+
+    /*Inner items*/
+
+    /*Fonts*/
+}
