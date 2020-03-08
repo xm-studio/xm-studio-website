@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/xm-studio-website/static/css/main.edde8a7f.chunk.css",
+    "main.css": "/xm-studio-website/static/css/main.f1c04ffe.chunk.css",
     "main.js": "/xm-studio-website/static/js/main.9205fb97.chunk.js",
     "main.js.map": "/xm-studio-website/static/js/main.9205fb97.chunk.js.map",
     "runtime-main.js": "/xm-studio-website/static/js/runtime-main.ea593941.js",
@@ -9,16 +9,16 @@
     "static/js/2.b9e95426.chunk.js": "/xm-studio-website/static/js/2.b9e95426.chunk.js",
     "static/js/2.b9e95426.chunk.js.map": "/xm-studio-website/static/js/2.b9e95426.chunk.js.map",
     "index.html": "/xm-studio-website/index.html",
-    "precache-manifest.60c681315e307a1453c78c038e867c35.js": "/xm-studio-website/precache-manifest.60c681315e307a1453c78c038e867c35.js",
+    "precache-manifest.bd438e243a966c970f02eb1b953e57a1.js": "/xm-studio-website/precache-manifest.bd438e243a966c970f02eb1b953e57a1.js",
     "service-worker.js": "/xm-studio-website/service-worker.js",
     "static/css/2.ff29e5f6.chunk.css.map": "/xm-studio-website/static/css/2.ff29e5f6.chunk.css.map",
-    "static/css/main.edde8a7f.chunk.css.map": "/xm-studio-website/static/css/main.edde8a7f.chunk.css.map"
+    "static/css/main.f1c04ffe.chunk.css.map": "/xm-studio-website/static/css/main.f1c04ffe.chunk.css.map"
   },
   "entrypoints": [
     "static/js/runtime-main.ea593941.js",
     "static/css/2.ff29e5f6.chunk.css",
     "static/js/2.b9e95426.chunk.js",
-    "static/css/main.edde8a7f.chunk.css",
+    "static/css/main.f1c04ffe.chunk.css",
     "static/js/main.9205fb97.chunk.js"
   ]
 }

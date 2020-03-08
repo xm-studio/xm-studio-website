@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "85a1082f3615a6e4e5f3487cabd7ca94",
+    "revision": "a6478bfdde5f9ba753ff17b9feef59e4",
     "url": "/xm-studio-website/index.html"
   },
   {
@@ -8,15 +8,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/xm-studio-website/static/css/2.ff29e5f6.chunk.css"
   },
   {
-    "revision": "0e1a028672153390bf79",
-    "url": "/xm-studio-website/static/css/main.edde8a7f.chunk.css"
+    "revision": "7d89c0c462096f26629c",
+    "url": "/xm-studio-website/static/css/main.f1c04ffe.chunk.css"
   },
   {
     "revision": "9941626a91a4da0517cb",
     "url": "/xm-studio-website/static/js/2.b9e95426.chunk.js"
   },
   {
-    "revision": "0e1a028672153390bf79",
+    "revision": "7d89c0c462096f26629c",
     "url": "/xm-studio-website/static/js/main.9205fb97.chunk.js"
   },
   {
