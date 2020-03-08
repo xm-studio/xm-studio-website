@@ -4,6 +4,7 @@ import './app.css';
 import './custom.scss';
 import { Link } from 'react-router-dom';
 
+import AcademicResearchShelf from './resources/Books/Shelves/AcademicResearchShelf.js';
 import BookShelf from './components/bookshelf.js';
 
 class XMBookStack extends React.Component {
@@ -13,24 +14,22 @@ class XMBookStack extends React.Component {
   render (){
     
     return(
-      <Container >
+      <Col className="main-space" >
         
         <Col className = "main-space-header">
-          <Row className='main-header'>XM STUDIO<br/>RESEARCH + ARCHITECTURE
+          <Row className='main-header-mobile'>XM STUDIO<br/>RESEARCH + ARCHITECTURE
           </Row>
           <Row className='main-title'>Book Stack
           </Row>
         </Col>
       
         <Col className='main-content'>
-        <Link to="/bookstack/research/arm_final"><BookShelf shelfName="Academic research"/></Link>
-          
+          <AcademicResearchShelf/>
           <BookShelf shelfName="Academic design"/>
           <BookShelf shelfName="Academic essays"/>
-          <BookShelf shelfName="Miscellaneous"/>
         </Col>
       
-      </Container>
+      </Col>
     );
   
 } 

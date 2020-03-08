@@ -1,0 +1,70 @@
+@import '../app.css';
+
+.main-content-feedcard-div{
+  /*Positioning*/
+  position: absolute;
+  z-index:10;
+  
+
+  /*Margins and padding*/
+  margin-top: 1rem;
+  padding: 2rem;
+
+  /*Size*/
+  width: 100%;
+
+  /*Borders and colors*/
+  
+  border-color: var(--BORDER_COLOR);
+  border-radius: 1.5rem;
+  
+  backdrop-filter: blur(5px);
+  box-shadow: inset 0 0 0 300px rgba(129, 129, 129, 0.25),
+  -5px -5px 20px rgba(175, 175, 175, 0.1)  ;
+  /*Inner items*/
+  align-self: flex-end;
+  
+  /*Fonts*/
+}
+
+.main-content-feedcard-text{
+/*Positioning*/
+z-index:20;
+
+/*Margins and padding*/
+margin-left:0.5rem;
+
+/*Size*/
+
+/*Borders and colors*/
+
+/*Inner items*/
+
+/*Fonts*/
+color: white;
+  mix-blend-mode: luminosity;
+        font-size: 1.5rem;
+        text-align: left;
+}
+
+.main-content-feedcard-date{
+  /*Positioning*/
+  z-index:20;
+  
+  /*Margins and padding*/
+  margin-left:0.5rem;
+  margin-top:-0.5rem;
+  
+  /*Size*/
+  
+  /*Borders and colors*/
+  
+  /*Inner items*/
+  
+  /*Fonts*/
+  color: var(--DARK_COLOR);
+    mix-blend-mode: luminosity;
+          font-size: 1.2rem;
+          text-align: left;
+  }
+

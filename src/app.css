@@ -1,5 +1,5 @@
 @import url("https://use.typekit.net/yrq2ink.css");
-
+@import "../node_modules/animate.css/animate.css";
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400&display=swap');
 
 /* Template*/
@@ -19,7 +19,7 @@
 /* --- */
 
 :root{
-    --BORDER_COLOR: rgba(0, 0, 0,0);
+    --BORDER_COLOR: rgba(0, 0, 0, 0);
     --MAIN_FONT: 'basic-sans', sans-serif;
     
     /*Color theme*/
@@ -49,24 +49,7 @@ img{
 }
 
 
-.main-space-header{
 
-/*Positioning*/
-    position: absolute;
-    
-    /*Margins and padding*/
-    
-    
-    /*Border and colors*/
-    
-    border-color: var(--BORDER_COLOR);
-    border-style:solid;
-
-    /*Inner items*/
-    flex-direction: column;
-    
-    
-}
 
 .sidebar-button:hover{
     border-color: rgba(255,0,0,0);
@@ -109,7 +92,7 @@ a.contact{
 
     .base{
         /*Size*/
-        position: absolute;
+        position: fixed;
         top:0;
         bottom:0;
         left:2rem;
@@ -127,21 +110,20 @@ a.contact{
         /*Inner items*/
         flex-direction: column;
     }
+    
 
     .main-space{
         /*Positioning*/
-        position: absolute;
-        top: 0rem;
-        overflow: auto;
+        position: relative;
+        overflow: hidden;
+        z-index: 0;
 
         /*Margins and padding*/
         border-style: dotted;
         border-width: 1px;
-        padding-top: 3rem;
-        
         
         /*Size*/
-        width: inherit;
+        width: 100vh;
     
         /*Borders and colors*/
         background-color: var(--VVLIGHT_COLOR); 
@@ -157,7 +139,26 @@ a.contact{
         
     }
 
-    .main-header{
+    .main-space-header{
+
+        /*Positioning*/
+            position: fixed;
+            
+            /*Margins and padding*/
+            
+            
+            /*Border and colors*/
+            background-color: var(--VVLIGHT_COLOR);
+            border-color: var(--BORDER_COLOR);
+            border-style:solid;
+        
+            /*Inner items*/
+            flex-direction: column;
+            
+            
+        }
+
+    .main-header-mobile{
         /*Positioning*/
         
         /*Margins and padding*/
@@ -180,6 +181,18 @@ a.contact{
         font-style: normal;
         text-align: left;
         text-transform: uppercase;
+
+        /*Animation*/
+        animation-name: fadeInDown;
+        animation-fill-mode: both;
+        animation-duration:0.4s;
+        animation-delay: 0.7s;
+    }
+
+    .main-header-desktop{
+        /*Positioning*/
+        display: none;
+        
     }
 
     .main-title{
@@ -205,6 +218,13 @@ a.contact{
         font-style: normal;
         font-weight: 700;
         text-align: left;
+
+        
+        /*Animation*/
+        animation-name: fadeInDown;
+        animation-fill-mode: both;
+        animation-duration:0.6s;
+        animation-delay: 0.3s;
     }
 
     
@@ -233,17 +253,43 @@ a.contact{
 
     .main-content{
         /*Positioning*/
-        overflow-y: auto;
-        overflow-x: hidden;
+        overflow-y: scroll;
         top:1.5rem;
-        z-index: 10;
+        z-index: 2;
+        
+        
+        /*Margins and padding*/
+
+        /*Size*/
+        width: inherit;
+        height: 70vh;
+
+        border-style: solid;
+        border-color: var(--BORDER_COLOR);
+    
+        /*Inner items*/
+        
+        flex-direction: column;
+        
+        /*Fonts*/
+        font-family: var(--MAIN_FONT);;
+        
+        font-weight: 300;
+        color: grey;
+        
+    }
+
+    .main-content-contact{
+        /*Positioning*/
+        top:1.5rem;
+        z-index: 2;
         
         
         /*Margins and padding*/
         margin-right: 5rem;
 
         /*Size*/
-        height: 80vh;
+        height: 70vh;
 
         /*Borders and colors*/
         border-style: solid;
@@ -263,8 +309,83 @@ a.contact{
         
     }
 
+    .main-content-text{
+
+        /*Margins and padding*/
+        margin-top: 0rem;
+        z-index:10;
+
+        /*Size*/
+        
+
+        /*Borders and colors*/
+        border-style: dashed;
+        border-color: var(--BORDER_COLOR);
+
+        /*Fonts*/
+        font-size: 2rem;
+        text-align: left;
+
+        /*Animation*/
+        animation-name: fadeInLeft;
+        animation-fill-mode: both;
+        animation-duration:0.7s;
+
+    }
+
+    .main-content-contact div:nth-child(1){
+        animation-delay: 0.5s;
+    }
+
+    .main-content-contact div:nth-child(2){
+        animation-delay: 0.75s;
+    }
+
+    .main-content-contact div:nth-child(3){
+        animation-delay: 1s;
+    }
     
+    .main-content-feedcard{
+        /*Margins and padding*/
+        will-change: transform;
+        padding: 0.5rem;
+
+        /*Size*/
+        width: 96%;
+        height: 100%;
+        overflow:hidden;
+
+        /*Borders and colors*/
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        background-size: cover;
+        background-color:var(--VVLIGHT_COLOR);
+        
+        border-color: var(--BORDER_COLOR);
+        border-radius: 1rem;
+        box-shadow: -5px -5px 5px rgba(247, 255, 253, 0.705), 
+                    -15px -15px 25px rgba(247, 255, 253, 0.5), 
+                    12px 12px 20px rgba(187, 207, 202, 0.438)             
+                    ;
+        
+
+        /*Fonts*/
+        
+
+        /*Inner items*/
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        /*Animation*/
+        animation-name: fadeInLeft;
+        animation-fill-mode: both;
+        animation-duration:0.7s;
+    }
+
     
+
     .main-content-book{
         /*Positioning*/
         
@@ -300,6 +421,28 @@ a.contact{
         
     }
 
+    .main-content-feed{
+        
+        /*Positioning*/
+        position:absolute;
+        will-change: transform;
+
+        /*Margins and padding*/
+        margin-top: 2rem;
+
+        /*Size*/
+        width: 90vw;
+        height: 65vh;
+
+        /*Borders and colors*/
+
+        /*Inner items*/
+        display: flex;
+        flex-direction: row;
+    
+        /*Fonts*/
+    }
+    
     .main-sidebar{
         /*Positioning*/
         position: fixed;
@@ -350,6 +493,29 @@ a.contact{
         transition: all .5s;
     }
 
+    .sidebar-button-name{
+        /*Positioning*/
+
+
+        /*Margins and padding*/
+
+        /*Size*/
+        width: 9rem;
+
+        /*Borders and colors*/    
+        border-color: var(--BORDER_COLOR);
+        border-style: solid;
+        border-width: 1px;
+
+        /*Inner items*/
+        display: none;
+
+        /*Fonts*/
+
+        /*Animation*/
+        transition: all .5s;
+        }
+
     p.content-contact-group{
         padding-bottom: 2rem;
 
@@ -358,25 +524,7 @@ a.contact{
         border-color: var(--BORDER_COLOR);
     }
 
-    .main-content-text{
 
-        /*Margins and padding*/
-        margin-top: 0rem;
-        
-
-        /*Size*/
-        
-
-        /*Borders and colors*/
-        border-style: dashed;
-        border-color: var(--BORDER_COLOR);
-
-        /*Fonts*/
-        font-size: 2rem;
-        text-align: left;
-    }
-
-    
 } 
 
 /*--------------------- PC -------------------*/
@@ -403,38 +551,67 @@ a.contact{
 
     .main-space{
         /*Positioning*/
-    
+        
+        left:0;
+
+
         /*Margins and padding*/
-        border-style: solid;
-        border-width: 1px;
-        padding-top: 5rem;
-        padding-left: 7rem;
-        margin: 2rem 2rem 2rem 0rem;
-    
+        margin-right: 8rem;
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+            
         /*Size*/
-        width: inherit;
     
         /*Borders and colors*/
-        background-color:rgb(255, 255, 255); 
+        
+        border-style: solid;
+        border-width: 1px;
         border-color: var(--BORDER_COLOR);
         border-radius: 0.5rem;
         /*box-shadow: 0rem 0rem 2rem 0rem rgba(0,0,0,0.2);*/
     
         /*Inner items*/
-        flex-direction: column;
+        display: flex;
+        flex-direction: row;
         
         /*Fonts*/
         
     }
-    
-    .main-header{
+
+    .main-space-header{
+
         /*Positioning*/
+            
+            /*Margins and padding*/
+            margin-right: 4rem;
+            
+            /*Size*/
+
+            /*Border and colors*/
+            
+            border-color: var(--BORDER_COLOR);
+            border-style:solid;
+        
+            /*Inner items*/
+            display: flex;
+            align-items: center;
+            
+            
+        }
     
+    .main-header-mobile{
+        /*Positioning*/
+        visibility: collapse;
+       
+    }
+
+    .main-header-desktop{
+        /*Positioning*/
+        position: absolute;
         /*Margins and padding*/
-        margin-top: 1rem;
+        bottom: 8rem;
     
         /*Size*/
-        width: inherit;
     
         /*Borders and colors*/
         border-color: var(--BORDER_COLOR);
@@ -445,14 +622,53 @@ a.contact{
         /*Inner items*/
         
         /*Fonts*/
-        font-size: 4rem;
+        
+        font-size: 1.5rem;
         font-family: var(--MAIN_FONT);
         font-style: normal;
-        font-weight: 400;
         text-align: left;
+        text-transform: uppercase;
+
+        /*Animation*/
+        animation-name: flipInX;
+        animation-duration:1s;
     }
 
-    .main-content{
+    .main-title{
+        /*Positioning*/
+        position: relative;
+        z-index:2;
+        /*Margins and padding*/
+    
+        /*Size*/
+    
+        /*Borders and colors*/
+        border-color: var(--BORDER_COLOR);
+        border-style: solid;
+        border-width: 1px;
+        
+    
+        /*Inner items*/
+        
+        
+        
+        /*Fonts*/
+        color: var(--VVDARK_COLOR);
+        font-size: 10rem;
+        font-family: var(--MAIN_FONT);
+        font-style: normal;
+        font-weight: 700;
+        text-align: left;
+
+        /*Animation*/
+        animation-name: fadeInLeft;
+        animation-fill-mode: both;
+        animation-duration:1s;
+        animation-delay: 0.5s;
+
+    }
+
+    .main-content, .main-content-contact{
         /*Positioning*/
     
         /*Margins and padding*/
@@ -460,7 +676,6 @@ a.contact{
         
     
         /*Size*/
-        height: available;
     
         /*Borders and colors*/
         
@@ -468,6 +683,7 @@ a.contact{
         border-style: solid;
     
         /*Inner items*/
+        flex-direction: row;
         
         /*Fonts*/
         font-family: var(--MAIN_FONT);;
@@ -475,18 +691,51 @@ a.contact{
         font-weight: 300;
         
     }
+
+    .main-content-text{
+
+        /*Margins and padding*/
+
+        /*Borders and colors*/
+        /*Borders and colors*/
+        border-style: solid;
+        border-color: var(--BORDER_COLOR);
+        
+        /*Fonts*/
+        font-size:2.5rem;
+        text-align: left;
+
+        /*Animation*/
+        animation-name: fadeInUp;
+        animation-fill-mode: both;
+        animation-duration:0.7s;
+
+    }
+
+    .main-content-contact div:nth-child(1){
+        animation-delay: 0.5s;
+    }
+
+    .main-content-contact div:nth-child(2){
+        animation-delay: 0.75s;
+    }
+
+    .main-content-contact div:nth-child(3){
+        animation-delay: 1s;
+    }
+    
     
 
     .main-sidebar{
         /*Positioning*/
     
         /*Margins and padding*/
-        margin: 2rem 2rem 2rem 2rem;
-        padding-top: 4rem;
-        padding-bottom: 2rem;
+        margin-left:8rem;
+        padding-top: 8rem;
+        padding-bottom: 8rem;
     
         /*Size*/
-        width: 8rem;
+        width: 30rem;
     
         /*Border and colors*/
         border-color: var(--BORDER_COLOR);
@@ -494,7 +743,7 @@ a.contact{
         border-width: 1px;
     
         /*Inner Items*/
-        align-items: center;
+        align-items: left;
         display: flex;
         justify-content: start;
         flex-direction: column;
@@ -504,6 +753,7 @@ a.contact{
     
     .sidebar-button{
         /*Positioning*/
+        
     
         /*Margins and padding*/
     
@@ -516,6 +766,7 @@ a.contact{
         border-width: 1px;
     
         /*Inner items*/
+        display: none;
         
         /*Fonts*/
 
@@ -523,22 +774,48 @@ a.contact{
         transition: all .5s;
     }
 
+    .sidebar-button-name{
+                /*Positioning*/
+        
+    
+        /*Margins and padding*/
+    
+        /*Size*/
+        
+        
+        /*Borders and colors*/    
+        
+    
+        /*Inner items*/
+        
+        
+        /*Fonts*/
+        font-size: 2.2rem;
+        line-height: 4rem;
+        text-align: left;
+        color: var(--BLACK_COLOR); 
+        text-transform: uppercase;
+        font-weight: 500;
+
+        /*Animation*/
+        animation-name: flipInX;
+        animation-duration:1s;
+        
+    }
+
+    
+
+    
+
+
+    .sidebar-button-name:active{
+        color: var(--VVDARK_COLOR);
+        font-weight: 700;
+    }
+
     p.content-contact-group{
         padding-right: 8rem;
     }
 
-    .main-content-text{
-
-        /*Margins and padding*/
-        padding: 2rem 2.5rem;
-
-        /*Borders and colors*/
-        /*Borders and colors*/
-        border-style: solid;
-        border-color: var(--BORDER_COLOR);
-        
-        /*Fonts*/
-        font-size:3rem;
-        text-align: left;
-    }
+ 
 } 

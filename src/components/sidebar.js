@@ -29,11 +29,16 @@ play = () =>{
         return(
         <div className="main-sidebar">
             
-            <Link to="/feed"><CompassButton /></Link>
-            <Link to="/projects"><PawprintButton /></Link>
-            <Link to="/bookstack"><BookstackButton/></Link>
-            <Link to="/team"><TeamButton/></Link>
-            <Link to="/contact"><ContactButton/></Link>
+            
+            <Link to="/feed"><CompassButton /><div class="sidebar-button-name">Feed</div></Link>
+            <Link to="/projects"><PawprintButton /><div class="sidebar-button-name">Projects</div></Link>
+            <Link to="/bookstack"><BookstackButton/><div class="sidebar-button-name">Book Stack</div></Link>
+            <Link to="/team"><TeamButton/><div class="sidebar-button-name">Team</div></Link>
+            <Link to="/contact"><ContactButton/><div class="sidebar-button-name">Contact</div></Link>
+
+            <div className='main-header-desktop'>XM STUDIO<br/>RESEARCH + ARCHITECTURE
+          </div>
+
         </div>
         );
     }   

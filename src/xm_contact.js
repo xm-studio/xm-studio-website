@@ -10,15 +10,15 @@ class XMContact extends React.Component {
   render (){
     
     return(
-      <Container >
+      <Container className="main-space">
         <Col className = "main-space-header">
-          <Row className='main-header'>XM STUDIO<br/>RESEARCH + ARCHITECTURE
+          <Row className='main-header-mobile'>XM STUDIO<br/>RESEARCH + ARCHITECTURE
           </Row>
           <Row className='main-title'>Contact
           </Row>
         </Col>
       
-        <Col className='main-content'>
+        <Col className='main-content-contact'>
         <Row className = 'main-content-text'>
           
           We are a studio that's founded in the clouds, as of now.
@@ -26,12 +26,14 @@ class XMContact extends React.Component {
         
       </Row>
       <Row className = 'main-content-text'>
-        <FlipContactCard name="Elangovan Sankaralingom" designation="CEO" tel="+919842144844" mail="elan@xm.studio"/>
-      </Row>
-      <Row className = 'main-content-text'>
-        <FlipContactCard name="Bhavatarini Kumaravel" designation="CFO" tel="+919585525188" mail="bava@xm.studio"/>
-      </Row>
 
+      
+        <FlipContactCard name="Elangovan Sankaralingom" designation="CEO" tel="+919842144844" mail="elan@xm.studio"/>
+        </Row>
+        <Row className = 'main-content-text'>
+        <FlipContactCard name="Bhavatarini Kumaravel" designation="CFO" tel="+919585525188" mail="bava@xm.studio"/>
+        </Row>
+        
         </Col>
       
       </Container>

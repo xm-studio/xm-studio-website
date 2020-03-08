@@ -21,17 +21,19 @@
 :root{
     
     --MAIN_FONT: 'basic-sans', sans-serif;
+    
 
 }
 
 .flip-card {
     /*Positioning*/
+    
 
     /*Margins and padding*/
-    margin-top: 2rem;
+    margin-top: 3rem;
     /*Size*/
-    width: 97%;
-    height: 22rem;
+    width: 100%;
+    height: 20rem;
     perspective: 1000px;
 
     /*Borders and colors*/
@@ -55,6 +57,7 @@
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
+    z-index: 10;
   }
   
   /* Do an horizontal flip when you move the mouse over the flip box container */
@@ -67,17 +70,18 @@
   /* Position the front and back side */
   .flip-card-front, .flip-card-back {
     position: absolute;
+    overflow:visible;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
     border-radius:1rem;
-    box-shadow: 5px 5px 12px #25252521;
+    z-index: 10;
+    
   }
   
   /* Style the front side (fallback if image is missing) */
   .flip-card-front {
     background-color: var(--VVLIGHT_COLOR);
-    background-image:linear-gradient(125deg, var(--VLIGHT_COLOR), var(--VVLIGHT_COLOR));
     
     border-style: solid;
     border-color: var(--BORDER_COLOR);
@@ -86,9 +90,11 @@
     justify-content: space-evenly;
     text-align: bottom left;
     vertical-align: bottom;
+    box-shadow: -5px -5px 5px rgb(247, 255, 253, 0.9), -15px -15px 25px rgba(247, 255, 253, 0.7), 15px 15px 25px rgba(187, 207, 202, 0.438);
   }
   
   .flip-card-front-text{
+    font-size: 1.8rem;
     color: var(--VDARK_COLOR);
     border-style: solid;
     border-color: var(--BORDER_COLOR);
@@ -100,6 +106,7 @@
   }
 
   .flip-card-back-text{
+    font-size: 1.8rem;
     color: var(--LIGHT_COLOR);
     border-style: solid;
     border-color: var(--BORDER_COLOR);
@@ -115,4 +122,16 @@
 
     color: white;
     transform: rotateY(180deg);
+    box-shadow: 15px 15px 25px rgba(187, 207, 202, 0.438);
+  }
+
+  @media only screen and (min-width: 768px) {
+    .flip-card-back-text, .flip-card-front-text{
+      font-size: 2.5rem;
+    }
+
+    .flip-card {
+      height: 40rem;
+    }
+
   }

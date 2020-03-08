@@ -9,10 +9,10 @@ class XMTeam extends React.Component {
   render (){
     
     return(
-      <Container >
+      <Col className="main-space">
         
         <Col className = "main-space-header">
-          <Row className='main-header'>XM STUDIO<br/>RESEARCH + ARCHITECTURE
+          <Row className='main-header-mobile'>XM STUDIO<br/>RESEARCH + ARCHITECTURE
           </Row>
           <Row className='main-title'>Team
           </Row>
@@ -22,7 +22,7 @@ class XMTeam extends React.Component {
       
         </Col>
       
-      </Container>
+      </Col>
     );
   
 }

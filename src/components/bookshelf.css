@@ -28,25 +28,28 @@
 .book-shelf{
         
     /*Positioning*/
+    overflow-x: auto;
+    margin-bottom: -0.14rem;
 
     /*Margins and padding*/
 
     /*Size*/
-    width: stretch;
-    height: 20vh;
+    width: 50vh;
+    height: 35vh;
 
 
     /*Borders and colors*/
     border-color: var(--BORDER_COLOR);
     border-style: solid;
     border-width: 1px;
-    border-radius: 1rem;
 
     /*Inner items*/
     display: flex;
+    justify-content: left;
 
     /*Fonts*/
 }
+
 
 .book-shelf-name{
 
@@ -55,7 +58,7 @@
     margin-bottom: 2rem;
 
     /*Size*/
-    height:4rem;
+    height:15rem;
 
     /*Borders and colors*/
     border-color: var(--BORDER_COLOR);
@@ -64,26 +67,14 @@
 
     /*Fonts*/
     font-size: 2rem;
+    font-weight: 500;
     text-transform: uppercase;
-    color: var(--VVDARK_COLOR);
+    color: grey;
     
     /*Inner items*/
 }
 
-.book-space{
-    /*Positioning*/
 
-    /*Margins and padding*/
-
-    /*Size*/
-    width: stretch;
-
-    /*Borders and colors*/
-
-    /*Inner items*/
-
-    /*Fonts*/
-}
 
 .book-shelf-base{
         /*Positioning*/
@@ -96,11 +87,40 @@
 
 
     /*Borders and colors*/
-    background-color: black;
-    background-image: url('../resources/Textures/WoodTexture.jpg');
-    box-shadow: 5px 5px 12px #25252521;
+    background-color: var(--VVLIGHT_COLOR);
+    box-shadow: -5px -5px 8px rgb(247, 255, 253, 1), -15px -15px 25px rgba(247, 255, 253, 0.9), 15px 15px 35px rgba(167, 180, 177, 0.9);
+
 
     /*Inner items*/
 
     /*Fonts*/
+}
+
+.book-cover{
+    /*Positioning*/
+
+    /*Margins and padding*/
+
+    /*Size*/
+    min-width: 240px;
+
+    /*Borders and colors*/
+    border-color: var(--BORDER_COLOR);
+    border-style: solid;
+    border-width: 1px;
+
+    /*Inner items*/
+    display:inline-block;
+    vertical-align: bottom;
+
+    /*Fonts*/
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 200px;
+    margin-left:0.5rem;
+    margin-right: 2.5rem;
+    box-shadow: 10px 10px 15px rgba(187, 207, 202, 0.9);
 }

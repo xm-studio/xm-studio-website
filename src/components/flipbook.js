@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import $ from "jquery";
 import "./turn.js";
+import Img from 'react-image';
 
 import "./turn.css";
 
@@ -55,7 +56,7 @@ class Flipbook extends React.Component {
     for(let i=0;i<parseInt(length);i++){
       let filename = path.concat('Book_Page_',(i+1).toString(),'.jpg');
       pages.push(<div key={i} className="page">
-      <img src={filename} alt="" />
+      <Img src={filename} alt="" />
     </div>);
     }
     return pages;

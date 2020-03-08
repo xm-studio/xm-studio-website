@@ -1,27 +1,32 @@
 import React from 'react';
-import {Row, Col, Container} from 'react-bootstrap';
+
+import {Row, Col} from 'react-bootstrap';
 import './app.css';
 import './custom.scss';
-
+import MainFeed from './components/mainfeed.js';
 
 class XMFeed extends React.Component {
+
+
   render (){
     
       return(
-      <Container >
+      <Col className="main-space">
         
         <Col className = "main-space-header">
-          <Row className='main-header'>XM STUDIO<br/>RESEARCH + ARCHITECTURE
+          <Row className='main-header-mobile'>XM STUDIO<br/>RESEARCH + ARCHITECTURE
           </Row>
+ 
           <Row className='main-title'>Feed
           </Row>
         </Col>
       
-        <Col className='main-content'>
+        <div>
+          <MainFeed/>
+              
+        </div>
       
-        </Col>
-      
-      </Container>
+      </Col>
       );
     
   }
